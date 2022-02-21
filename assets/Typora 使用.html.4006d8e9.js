@@ -1,0 +1,1 @@
+const a={key:"v-3a5feada",path:"/Markdown/Typora%20%E4%BD%BF%E7%94%A8.html",title:"Typora \u4F7F\u7528",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{},filePathRelative:"Markdown/Typora \u4F7F\u7528.md"};export{a as data};

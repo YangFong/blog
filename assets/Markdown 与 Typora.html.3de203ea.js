@@ -1,1 +1,0 @@
-const t={key:"v-738d2c5a",path:"/Markdown%20%E4%B8%8E%20Typora.html",title:"Markdown \u4E0E Typora",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u5B66\u4E60",slug:"\u5B66\u4E60",children:[]}],git:{},filePathRelative:"Markdown \u4E0E Typora.md"};export{t as data};
