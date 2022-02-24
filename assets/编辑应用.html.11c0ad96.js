@@ -1,0 +1,1 @@
+const t={key:"v-24507214",path:"/Markdown/%E7%BC%96%E8%BE%91%E5%BA%94%E7%94%A8.html",title:"\u7F16\u8F91\u5E94\u7528",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{},filePathRelative:"Markdown/\u7F16\u8F91\u5E94\u7528.md"};export{t as data};
