@@ -55,4 +55,3 @@ sidebar_position: 3
 ![](./images/Tampermonkey/6.png)
 
 ![](./images/Tampermonkey/7.png)
-
