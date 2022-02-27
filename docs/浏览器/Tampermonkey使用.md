@@ -1,4 +1,8 @@
-:::caution
+---
+sidebar_position: 3
+---
+
+:::caution 注意
 看一篇的前提条件是已安装了 Tampermonkey
 :::
 

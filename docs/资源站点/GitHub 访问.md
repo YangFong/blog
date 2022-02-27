@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 :::note 说明
 该功能特别重要
 :::
