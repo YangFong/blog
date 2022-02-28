@@ -55,7 +55,8 @@ module.exports = {
             position: "left",
             label: "文档",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/docs/timeline", label: "时间线", position: "left" },
           {
             href: "https://github.com/YangFong/blog",
             label: "GitHub",
@@ -108,5 +109,7 @@ module.exports = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      hideableSidebar: true,
+      // autoCollapseSidebarCategories: true,
     },
 };
