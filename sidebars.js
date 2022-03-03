@@ -23,7 +23,44 @@ module.exports = {
   docs: [
     "此处开始",
     "timeline",
-    "前端路线",
+    {
+      type: "category",
+      label: "前端",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "前端/ES6",
+        "前端/TypeScript",
+        {
+          type: "category",
+          label: "框架",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "前端/框架/学习什么",
+            "前端/框架/Vue",
+            "前端/框架/React",
+          ]
+        },
+        // {
+        //   type: "category",
+        //   label: "编辑应用",
+        //   link: {
+        //     type: "generated-index",
+        //   },
+        //   collapsed: true,
+        //   items: [
+        //     "Markdown/编辑应用/列表",
+        //     "Markdown/编辑应用/Typora 使用问题",
+        //   ],
+        // },
+        // "Markdown/语法学习",
+        // "Markdown/写作规范",
+      ],
+    },
     {
       type: "category",
       label: "Markdown",
@@ -61,7 +98,7 @@ module.exports = {
         "科学上网/能做什么",
         "科学上网/操作方法",
         "科学上网/移动端使用",
-      ]
+      ],
     },
     {
       type: "category",
@@ -99,8 +136,8 @@ module.exports = {
         "常用 App/通用",
         "常用 App/开发配件",
         "常用 App/开发环境",
-        "常用 App/主工具"
-      ]
+        "常用 App/主工具",
+      ],
     },
     {
       type: "category",
@@ -109,11 +146,7 @@ module.exports = {
         type: "generated-index",
       },
       collapsed: true,
-      items: [
-        "工具站点/电子书",
-        "工具站点/DIY 图片",
-        "工具站点/图片资源",
-      ]
+      items: ["工具站点/电子书", "工具站点/DIY 图片", "工具站点/图片资源"],
     },
     {
       type: "category",
@@ -124,21 +157,25 @@ module.exports = {
       collapsed: true,
       items: [
         "Git 与 GitHub/什么是 Git",
-        {
-          type: "category",
-          label: "GitHub",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "Git 与 GitHub/GitHub/什么是 GitHub",
-            "Git 与 GitHub/GitHub/访问问题",
-          ],
-        },
-      ]
+        
+      ],
     },
-     // {
+    {
+      type: "category",
+      label: "GitHub",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "GitHub/什么是 GitHub",
+        "GitHub/访问问题",
+        "GitHub/起步",
+        "GitHub/插件",
+        // "GitHub/访问问题",
+      ],
+    },
+    // {
     //   type: "category",
     //   label: "浏览器",
     //   link: {
