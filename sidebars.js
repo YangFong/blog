@@ -175,6 +175,18 @@ module.exports = {
         // "GitHub/访问问题",
       ],
     },
+    {
+      type: "category",
+      label: "HTTP",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "HTTP/REST",
+        "HTTP/GraphQL",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "浏览器",
