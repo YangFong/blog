@@ -187,6 +187,18 @@ module.exports = {
         "HTTP/GraphQL",
       ],
     },
+    {
+      type: "category",
+      label: "SQL",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "SQL/连接应用",
+        // "HTTP/GraphQL",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "浏览器",
