@@ -196,7 +196,7 @@ module.exports = {
       collapsed: true,
       items: [
         "SQL/连接应用",
-        // "HTTP/GraphQL",
+        "SQL/练习",
       ],
     },
     // {
