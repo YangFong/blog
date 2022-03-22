@@ -309,7 +309,7 @@ CREATE TABLE student_copy SELECT * FROM student
 ```
 
 ```sql
-#SQL Server
+-- SQL Server
 SELECT * INTO student_copy FROM student;
 ```
 
