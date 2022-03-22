@@ -290,7 +290,7 @@ LIMIT 5
 > 答案只写 SQL
 
 ```sql
-#MySQL
+-- MySQL
 ALTER TABLE Course MODIFY Cname NVARCHAR(100);
 ```
 
@@ -304,8 +304,8 @@ ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 > 答案只写 SQL
 
 ```sql
-#MySQL
-CREATE TABLE student_copy SELECT * FROM student
+-- MySQL
+CREATE TABLE student_copy SELECT * FROM student;
 ```
 
 ```sql
