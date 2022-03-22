@@ -290,12 +290,12 @@ LIMIT 5
 > 答案只写 SQL
 
 ```sql
-/*MySQL*/
+-- MySQL
 ALTER TABLE Course MODIFY Cname NVARCHAR(100);
 ```
 
 ```sql
-/*SQL Server*/
+-- SQL Server
 ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 ```
 
@@ -304,12 +304,12 @@ ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 > 答案只写 SQL
 
 ```sql
-/*MySQL*/
+-- MySQL
 CREATE TABLE student_copy SELECT * FROM student
 ```
 
 ```sql
-/*SQL Server*/
+-- SQL Server
 SELECT * INTO student_copy FROM student;
 ```
 
