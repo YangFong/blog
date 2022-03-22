@@ -197,6 +197,7 @@ module.exports = {
       items: [
         "SQL/连接应用",
         "SQL/练习",
+        "SQL/exam",
       ],
     },
     // {
