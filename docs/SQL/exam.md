@@ -305,7 +305,7 @@ ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 
 ```sql
 -- MySQL
-CREATE TABLE student_copy SELECT * FROM student
+CREATE TABLE student_copy SELECT * FROM student;
 ```
 
 ```sql
