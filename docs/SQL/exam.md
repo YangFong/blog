@@ -295,7 +295,7 @@ ALTER TABLE Course MODIFY Cname NVARCHAR(100);
 ```
 
 ```sql
-#SQL Server
+-- SQL Server
 ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 ```
 
