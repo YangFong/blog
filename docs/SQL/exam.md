@@ -1,3 +1,7 @@
+:::danger
+以下代码执行环境为 MySQL 8.0，有一部分不可照搬入 SQL Server。较为明显的便是存在分页查询的语句
+:::
+
 ## 1. 查询平均成绩大于等于 60 分的同学的学生编号和学生姓名和平均成绩
 
 ```sql
@@ -72,41 +76,31 @@ WHERE
 
 ```sql
 SELECT
-	*
+	* 
 FROM
-	student AS s
+	student AS s 
 WHERE
-	( SELECT COUNT(*) FROM sc WHERE sc.Sid = s.Sid ) = (
-	SELECT
-		COUNT(*)
-	FROM
-	course AS c);
+	( SELECT COUNT(*) FROM sc WHERE sc.Sid = s.Sid ) = ( SELECT COUNT(*) FROM course AS c );
 ```
 
 ## 7. 查询和 "01" 号的同学学习的课程完全相同的其他同学的信息
 
 ```sql
 SELECT
-	*
+	* 
 FROM
-	student AS s
+	student AS s 
 WHERE
-	s.Sid
-	(
+	s.Sid != '01' 
+	AND (
 	SELECT
-		COUNT(*)
+		COUNT(*) 
 	FROM
-		sc
+		sc 
 	WHERE
-		sc.Sid = s.Sid
-		AND sc.Cid IN ( SELECT sc.Cid FROM sc WHERE sc.Sid = '01' )
-		) = (
-	SELECT
-		COUNT(*)
-	FROM
-		sc
-	WHERE
-	sc.Sid = '01')
+		sc.Sid = s.Sid 
+		AND sc.Cid IN ( SELECT sc.Cid FROM sc WHERE sc.Sid = '01' ) 
+	) = ( SELECT COUNT(*) FROM sc WHERE sc.Sid = '01' );
 ```
 
 ## 8. 查询没学过 "张三" 老师讲授的任一门课程的学生姓名
@@ -193,7 +187,6 @@ WHERE
 ORDER BY
 	sc.Cid,
 	sc.score DESC;
-
 ```
 
 ## 13. 查询出只选修两门课程的学生学号和姓名
@@ -201,17 +194,11 @@ ORDER BY
 ```sql
 SELECT
 	s.sid AS 学号,
-	s.Sname AS 姓名
+	s.Sname AS 姓名 
 FROM
-	student AS s
+	student AS s 
 WHERE
-	2 = (
-	SELECT
-		COUNT(*)
-	FROM
-		sc
-	WHERE
-	sc.Sid = s.Sid);
+	2 = ( SELECT COUNT(*) FROM sc WHERE sc.Sid = s.Sid );
 ```
 
 ## 14. 查询名字中含有「风」字的学生信息
@@ -233,7 +220,7 @@ SELECT
 FROM
 	student AS s
 WHERE
-	YEAR ( s.Sage ) = '1990'
+	YEAR ( s.Sage ) = '1990';
 ```
 
 ## 16. 查询各学生的姓名、年龄（只按年份来计算）
@@ -250,38 +237,40 @@ FROM
 
 ```sql
 SELECT
-	*
+	* 
 FROM
-	student AS s
+	student AS s 
 WHERE
-	MONTH (
-		NOW()) = MONTH (
-	s.Sage);
+	MONTH (NOW()) = MONTH ( s.Sage );
 ```
 
 ## 18. 查询下下月过生日的学生信息
 
 ```sql
-SELECT * FROM student AS s WHERE ( CASE -- 大于 10，就得跳到下一年
-		WHEN MONTH ( NOW()) > 10 THEN
-		(
-			NOW()) - 12 ELSE MONTH (
-		NOW())
-		END
-			) + 2 = MONTH ( s.Sage );
+-- 跳两次
+-- 大于 10，就得跳到下一年
+SELECT 
+	* 
+FROM 
+	student AS s 
+WHERE ( 
+	CASE 
+		WHEN MONTH ( NOW()) > 10 THEN (NOW()) - 12 
+		ELSE MONTH ( NOW()) 
+	END 
+) + 2 = MONTH ( s.Sage );
 ```
 
 ## 19. 查询成绩表第 2 页数据（每页 5 条数据，按照成绩降序排序）
 
 ```sql
 SELECT
-	*
+	* 
 FROM
-	sc
+	sc 
 ORDER BY
-	sc.score DESC
-	LIMIT 5,
-	5;
+	sc.score DESC 
+LIMIT 5,5;
 ```
 
 ## 20. 查询成绩表前 5 条数据（每页 5 条数据，按照成绩降序排序）
@@ -293,7 +282,7 @@ FROM
 	sc
 ORDER BY
 	sc.score DESC
-	LIMIT 5
+LIMIT 5
 ```
 
 ## 21. 修改 Course 表 Cname 字段类型为 nvarchar，长度为 100
@@ -342,16 +331,9 @@ FROM
 ```sql
 SELECT
 	s.Sid,
-	s.Sname
+	s.Sname 
 FROM
-	student AS s
+	student AS s 
 WHERE
-	( SELECT score FROM sc WHERE sc.Sid = s.Sid AND sc.Cid = '02' ) < (
-	SELECT
-		score
-	FROM
-		sc
-	WHERE
-		sc.Sid = s.Sid
-	AND sc.Cid = '01');
+	( SELECT score FROM sc WHERE sc.Sid = s.Sid AND sc.Cid = '02' ) < ( SELECT score FROM sc WHERE sc.Sid = s.Sid AND sc.Cid = '01' );
 ```
