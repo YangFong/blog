@@ -290,26 +290,28 @@ LIMIT 5
 > 答案只写 SQL
 
 ```sql
--- MySQL
+#MySQL
 ALTER TABLE Course MODIFY Cname NVARCHAR(100);
--- SQL Server
-ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
 ```
 
-
+```sql
+#SQL Server
+ALTER TABLE Course ALTER COLUMN Cname NVARCHAR(100);
+```
 
 ## 22. 使用 SQL 语言复制 student 表结构和数据，复制的表名为 student_copy
 
 > 答案只写 SQL
 
 ```sql
--- MySQL
+#MySQL
 CREATE TABLE student_copy SELECT * FROM student
--- SQL Server
-SELECT * INTO student_copy FROM student;
 ```
 
-
+```sql
+#SQL Server
+SELECT * INTO student_copy FROM student;
+```
 
 ## 23. 查询所有的学生姓名和老师姓名（使用 `union`）
 
