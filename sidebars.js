@@ -200,6 +200,17 @@ module.exports = {
         "SQL/exam",
       ],
     },
+    {
+      type: "category",
+      label: "算法",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "算法/练习",
+      ],
+    },
     // {
     //   type: "category",
     //   label: "浏览器",
