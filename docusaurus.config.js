@@ -9,7 +9,7 @@ module.exports = {
   title: "学组",
   tagline: "「 人们，你们怎么能因为贫穷，就以物遮目，而变化得如此愚蠢呢？ 」",
   url: "https://yangfong.github.io/",
-  baseUrl: "/",
+  baseUrl: "/blog/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",

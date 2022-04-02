@@ -22,7 +22,6 @@ module.exports = {
   // ],
   docs: [
     "此处开始",
-    "timeline",
     {
       type: "category",
       label: "前端",
@@ -31,6 +30,7 @@ module.exports = {
       },
       collapsed: true,
       items: [
+        "前端/CSS",
         "前端/ES6",
         "前端/TypeScript",
         {
@@ -39,26 +39,8 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "前端/框架/学习什么",
-            "前端/框架/Vue",
-            "前端/框架/React",
-          ]
+          items: ["前端/框架/学习什么", "前端/框架/Vue", "前端/框架/React"],
         },
-        // {
-        //   type: "category",
-        //   label: "编辑应用",
-        //   link: {
-        //     type: "generated-index",
-        //   },
-        //   collapsed: true,
-        //   items: [
-        //     "Markdown/编辑应用/列表",
-        //     "Markdown/编辑应用/Typora 使用问题",
-        //   ],
-        // },
-        // "Markdown/语法学习",
-        // "Markdown/写作规范",
       ],
     },
     {
@@ -102,31 +84,6 @@ module.exports = {
     },
     {
       type: "category",
-      label: "浏览器",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "浏览器/使用什么浏览器",
-        {
-          type: "category",
-          label: "插件",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "浏览器/插件/何为插件",
-            "浏览器/插件/安装方法",
-            "浏览器/插件/推荐列表",
-            "浏览器/插件/Tampermonkey使用",
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "常用 App",
       link: {
         type: "generated-index",
@@ -137,6 +94,31 @@ module.exports = {
         "常用 App/开发配件",
         "常用 App/开发环境",
         "常用 App/主工具",
+        {
+          type: "category",
+          label: "浏览器",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "常用 App/浏览器/使用什么浏览器",
+            {
+              type: "category",
+              label: "插件",
+              link: {
+                type: "generated-index",
+              },
+              collapsed: true,
+              items: [
+                "常用 App/浏览器/插件/何为插件",
+                "常用 App/浏览器/插件/安装方法",
+                "常用 App/浏览器/插件/推荐列表",
+                "常用 App/浏览器/插件/Tampermonkey使用",
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -157,22 +139,21 @@ module.exports = {
       collapsed: true,
       items: [
         "Git 与 GitHub/什么是 Git",
-        
-      ],
-    },
-    {
-      type: "category",
-      label: "GitHub",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "GitHub/什么是 GitHub",
-        "GitHub/访问问题",
-        "GitHub/起步",
-        "GitHub/插件",
-        // "GitHub/访问问题",
+        {
+          type: "category",
+          label: "GitHub",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "Git 与 GitHub/GitHub/什么是 GitHub",
+            "Git 与 GitHub/GitHub/访问问题",
+            "Git 与 GitHub/GitHub/起步",
+            "Git 与 GitHub/GitHub/插件",
+            // "GitHub/访问问题",
+          ],
+        },
       ],
     },
     {
@@ -182,34 +163,7 @@ module.exports = {
         type: "generated-index",
       },
       collapsed: true,
-      items: [
-        "HTTP/REST",
-        "HTTP/GraphQL",
-      ],
-    },
-    {
-      type: "category",
-      label: "SQL",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "SQL/连接应用",
-        "SQL/练习",
-        "SQL/exam",
-      ],
-    },
-    {
-      type: "category",
-      label: "算法",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "算法/练习",
-      ],
+      items: ["HTTP/REST", "HTTP/GraphQL"],
     },
     // {
     //   type: "category",
