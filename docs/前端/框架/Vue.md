@@ -28,4 +28,4 @@
 - [Naive UI](https://www.naiveui.com/zh-CN/light)
 - [primevue](http://www.primevue.top/#/)
 - [vxe-table](https://xuliangzhan_admin.gitee.io/vxe-table/#/table/start/install)
-- [idux]([https://xuliangzhan_admin.gitee.io/vxe-table/#/table/start/install](https://idux.site/))
+- [idux](https://idux.site/)
