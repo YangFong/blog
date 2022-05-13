@@ -24,27 +24,6 @@ module.exports = {
     "此处开始",
     {
       type: "category",
-      label: "前端",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: [
-        "前端/CSS",
-        "前端/ES6",
-        "前端/TypeScript",
-        {
-          type: "category",
-          label: "框架",
-          link: {
-            type: "generated-index",
-          },
-          items: ["前端/框架/学习什么", "前端/框架/Vue", "前端/框架/React"],
-        },
-      ],
-    },
-    {
-      type: "category",
       label: "Markdown",
       link: {
         type: "generated-index",
@@ -84,6 +63,31 @@ module.exports = {
     },
     {
       type: "category",
+      label: "浏览器",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "浏览器/使用什么浏览器",
+        {
+          type: "category",
+          label: "插件",
+          link: {
+            type: "generated-index",
+          },
+          collapsed: true,
+          items: [
+            "浏览器/插件/何为插件",
+            "浏览器/插件/安装方法",
+            "浏览器/插件/推荐列表",
+            "浏览器/插件/Tampermonkey使用",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "常用 App",
       link: {
         type: "generated-index",
@@ -94,31 +98,6 @@ module.exports = {
         "常用 App/开发配件",
         "常用 App/开发环境",
         "常用 App/主工具",
-        {
-          type: "category",
-          label: "浏览器",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "常用 App/浏览器/使用什么浏览器",
-            {
-              type: "category",
-              label: "插件",
-              link: {
-                type: "generated-index",
-              },
-              collapsed: true,
-              items: [
-                "常用 App/浏览器/插件/何为插件",
-                "常用 App/浏览器/插件/安装方法",
-                "常用 App/浏览器/插件/推荐列表",
-                "常用 App/浏览器/插件/Tampermonkey使用",
-              ],
-            },
-          ],
-        },
       ],
     },
     {
@@ -129,6 +108,27 @@ module.exports = {
       },
       collapsed: true,
       items: ["工具站点/电子书", "工具站点/DIY 图片", "工具站点/图片资源"],
+    },
+    {
+      type: "category",
+      label: "前端",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: [
+        "前端/CSS",
+        "前端/ES6",
+        "前端/TypeScript",
+        {
+          type: "category",
+          label: "框架",
+          link: {
+            type: "generated-index",
+          },
+          items: ["前端/框架/学习什么", "前端/框架/Vue", "前端/框架/React"],
+        },
+      ],
     },
     {
       type: "category",

@@ -110,7 +110,12 @@ module.exports = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java'],
       },
-      hideableSidebar: true,
+      docs: {
+        sidebar : {
+          hideable : true
+        }
+      }
+      // hideableSidebar: true,
       // autoCollapseSidebarCategories: true,
     },
 };
